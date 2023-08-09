@@ -260,7 +260,7 @@ body {
 .sub-title {
   text-align: center;
   font-size: 60px;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
 }
 
 .sub-title span {
@@ -268,7 +268,7 @@ body {
 }
 
 .container {
-  padding: 90px;
+  padding: 70px 200px;
 }
 .services-list {
   display: grid;
@@ -356,7 +356,8 @@ section {
 }
 
 .Technical-bars .bar {
-  margin-top: 40px 0;
+  /* margin-top: 40px 0; */
+  margin-top: 20px;
 }
 
 .Technical-bars .bar:first-child {
@@ -447,7 +448,7 @@ section {
   content: "70%";
 }
 .progress-line.html span::after {
-  content: "50%";
+  content: "10%";
 }
 .progress-line.javascript span::after {
   content: "90%";
@@ -554,7 +555,7 @@ section {
 }
 @keyframes animate-path4 {
   100% {
-    stroke-dashoffset: 75;
+    stroke-dashoffset: 60;
   }
 }
 
@@ -566,6 +567,7 @@ section {
   font-size: 17px;
   font-weight: 500;
   animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
 }
 
 .radial-bar .text {
@@ -579,4 +581,85 @@ section {
   font-weight: 500;
   animation: showText 0.5s 1s linear forwards;
   opacity: 0;
+}
+
+.main-text {
+  padding-top: 130px;
+  margin-top: 200px;
+}
+
+.main-text h2 {
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+}
+
+.main-text h2 span {
+  color: #0ef;
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+}
+
+.row {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.row img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+}
+
+.layer h5 {
+  color: black;
+  font-size: 600;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.layer p {
+  color: black;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.layer i {
+  color: #ff004f;
+  margin-top: 20px;
+  font-size: 20px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.row:hover img {
 }
