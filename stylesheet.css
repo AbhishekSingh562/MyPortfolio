@@ -92,7 +92,7 @@ body {
 }
 
 .navbar a:hover {
-  color: black;
+  color: rgb(54, 48, 48);
 }
 
 .home {
@@ -130,7 +130,7 @@ body {
 }
 
 .home-content h1 {
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 700;
   margin: -3px 0;
   opacity: 0;
@@ -138,7 +138,7 @@ body {
   animation-delay: 1s;
 }
 .home-content p {
-  font-size: 20px;
+  font-size: 16px;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1s;
@@ -222,19 +222,21 @@ body {
   line-height: 1.7;
   margin: 15px 0 30px;
 } */
+
+/* ABOUT BOX STARTED/////////////////////////////////////////////////////////////////// */
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 
 .about-img img {
   padding-bottom: 20%;
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
-  width: 100%;
-  border-radius: 8px;
+  width: 80%;
+  border-radius: 10px;
 }
 
 .about-text h2 {
@@ -249,9 +251,12 @@ body {
   color: aliceblue;
   font-size: 20px;
   line-height: 1.4;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
-
+.about-text p span {
+  color: black;
+}
+/* My services part started !!!/////////////////////////////////////////////////////////////////////// */
 #services {
   color: aliceblue;
   font-size: 20px;
@@ -260,16 +265,20 @@ body {
 }
 .sub-title {
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   padding-bottom: 30px;
 }
 
 .sub-title span {
   color: black;
 }
+.about-text h4 span {
+  color: black;
+  font-weight: 600;
+}
 
 .container {
-  padding: 70px 200px;
+  padding: 70px 110px;
 }
 .services-list {
   display: grid;
@@ -291,8 +300,8 @@ body {
 }
 
 .services-list i {
-  font-size: 50px;
-  margin-bottom: 30px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .services-list div h2 {
@@ -302,6 +311,45 @@ body {
 }
 
 .services-list div a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* making service list 2  */
+.services-list1 {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(259px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.services-list1 div {
+  background-color: transparent;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 13px;
+  border-right: 10px;
+  border-radius: 20px;
+  transition: background 0.5s, transform 0.5s;
+  box-shadow: 1px 1px 20px black, 1px 1px 50px black, 1px 1px 50px gray,
+    1px 1px 30px black;
+}
+
+.services-list1 i {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.services-list1 div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-list1 div a {
   text-decoration: none;
   color: black;
   font-size: 12px;
