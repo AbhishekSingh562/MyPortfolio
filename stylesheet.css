@@ -407,10 +407,18 @@ body {
   text-decoration-thickness: 5px;
   margin-bottom: 50px;
 } */
-section {
+
+/* /////////////////skill coding start from here/////////////////////////////////////// */
+/* section {
+  display: flex;
+  flex-wrap: wrap;
+} */
+/* 
+.skill-boxs {
   display: flex;
   flex-wrap: wrap;
 }
+
 
 .container1 {
   flex: 1;
@@ -418,6 +426,44 @@ section {
   padding: 75px 60px;
   box-sizing: border-box;
 }
+
+.container2 {
+  flex: 1;
+  max-width: calc(50% - 60px);
+  padding: 75px 60px;
+  box-sizing: border-box;
+} */
+.skill-boxs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust the alignment as needed */
+  padding: 50px 0; /* Adjust the padding as needed */
+  box-sizing: border-box;
+}
+
+.container1,
+.container2 {
+  flex: 1;
+  max-width: calc(50% - 30px); /* Adjust the max-width and margin as needed */
+  padding: 50px 30px; /* Adjust the padding as needed */
+  box-sizing: border-box;
+  margin-bottom: 30px; /* Adjust the margin-bottom as needed */
+}
+/* 
+.sub-title {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px; 
+}
+
+.sub-title span {
+  color: #0ef;
+} */
+
+/* Rest of your existing CSS code */
+
 .heading1 {
   text-align: center;
   text-decoration: underline;
@@ -674,6 +720,8 @@ section {
   animation: showText 0.5s 1s linear forwards;
   opacity: 0;
 }
+
+/* //project editing stat from here !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .main-text {
   padding-top: 130px;
