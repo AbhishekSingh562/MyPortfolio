@@ -61,7 +61,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 10%;
+  padding: 20px 5%;
   background: black;
   display: flex;
   justify-content: space-between;
@@ -86,7 +86,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 35px;
+  margin-left: 30px;
   transition: 0.5s;
   opacity: 0;
   animation: slideTop 0.5s ease forwards;
@@ -580,9 +580,9 @@ section {
 
 .radial-bars .radial-bar .progress-bar {
   stroke-width: 10;
-  stop-color: black;
+  stroke: black;
   fill: transparent;
-  stroke-dasharray: 502;
+  stroke-dasharray: 0;
   stroke-dashoffset: 502;
   stroke-linecap: round;
   animation: animate-bar 1s linear forwards;
@@ -614,24 +614,40 @@ section {
 .path-4 {
   animation: animate-path4 1s 1s linear forwards;
 }
+.path-5 {
+  animation: animate-path5 1s 1s linear forwards;
+}
+.path-6 {
+  animation: animate-path6 1s 1s linear forwards;
+}
 @keyframes animate-path1 {
   100% {
-    stroke-dashoffset: 50;
+    stroke-dashoffset: 75.3;
   }
 }
 @keyframes animate-path2 {
   100% {
-    stroke-dashoffset: 175;
+    stroke-dashoffset: 75.3;
   }
 }
 @keyframes animate-path3 {
   100% {
-    stroke-dashoffset: 125;
+    stroke-dashoffset: 150.6;
   }
 }
 @keyframes animate-path4 {
   100% {
-    stroke-dashoffset: 60;
+    stroke-dashoffset: 125.5;
+  }
+}
+@keyframes animate-path5 {
+  100% {
+    stroke-dashoffset: 125.5;
+  }
+}
+@keyframes animate-path6 {
+  100% {
+    stroke-dashoffset: 50.2;
   }
 }
 
