@@ -47,6 +47,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* box-sizing: content-box; */
   scroll-behavior: smooth;
   font-family: "poppins", sans-serif;
 }
@@ -709,7 +710,7 @@ body {
 }
 
 .radial-bar .text {
-  width: 100%;
+  width: 75%;
   position: absolute;
   text-align: center;
   left: 50%;
